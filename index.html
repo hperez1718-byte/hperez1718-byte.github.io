@@ -79,6 +79,13 @@
 
   .connect{text-align:center}
   .connect .cta{justify-content:center}
+  .center{text-align:center}
+  .grid4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .hire{margin:8px auto 0;max-width:880px;text-align:center;background:linear-gradient(180deg,#ecf8f7,#f4fbfa);border:1px solid #9fd3cf;border-radius:16px;padding:30px 24px}
+  .hire h3{margin:0 0 10px;font-family:var(--mono);font-size:19px;color:#0b5f66}
+  .hire p{margin:0 auto;max-width:620px;color:var(--text);font-size:15px}
+  .hire .cta{justify-content:center}
+  .btn.outline{background:#fff;border:2px solid var(--accent);color:var(--accent)}
   footer{padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
 
   /* ===== Dashboard view (BI-style) ===== */
@@ -121,7 +128,7 @@
     <div class="brand">Hyndrani Perez <small class="mono" style="color:var(--muted);font-weight:400">· portfolio</small></div>
     <nav>
       <a href="#story">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#certs">Certs</a>
-      <a href="#projects">Projects</a><a href="#services">Services</a><a href="#connect">Connect</a>
+      <a href="#projects">Projects</a><a href="#services">Work With Me</a><a href="#connect">Connect</a>
     </nav>
     <button class="toggle" id="toggle" aria-pressed="false">📊 Dashboard view</button>
   </div>
@@ -295,9 +302,20 @@
     </section>
 
     <section id="services">
-      <h2>Services — HP TechWork</h2>
-      <p class="sub">For homes, small businesses, and enterprise accounts in NYC.</p>
-      <div class="grid">
+      <div class="center">
+        <h2>Work With Me</h2>
+        <p class="sub">Full-time roles in IT and data analytics, plus freelance IT support and dashboards through HP TechWork.</p>
+      </div>
+      <div class="hire">
+        <h3>💼 Open to new roles &amp; freelance projects</h3>
+        <p>Nearly 20 years across hospitality operations, enterprise systems, and IT, now with SQL, Python, Power BI, and Tableau. Available for IT systems and data analyst roles (on-site, hybrid, or remote in NYC) and for project-based IT and dashboard work.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:HPTechWork@outlook.com?subject=Opportunity%20for%20Hyndrani">✉️ Email About a Role</a>
+          <a class="btn outline" href="https://www.linkedin.com/in/hptechwork/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+      <div class="eyebrow" style="margin:36px 0 14px">// how I can help · HP TechWork</div>
+      <div class="grid grid4">
         <div class="card"><h3>🖥️ Setup &amp; Troubleshooting</h3><p>Workstation setup and hardware, software, and network fixes on Windows and macOS.</p></div>
         <div class="card"><h3>☁️ Systems &amp; Cloud</h3><p>Microsoft 365, Google Workspace, and Azure administration, plus data migrations.</p></div>
         <div class="card"><h3>🤖 AI &amp; Automation</h3><p>AI analytics tools and productivity platforms that automate workflows, deployed securely.</p></div>
