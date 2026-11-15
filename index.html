@@ -86,6 +86,16 @@
   .hire p{margin:0 auto;max-width:620px;color:var(--text);font-size:15px}
   .hire .cta{justify-content:center}
   .btn.outline{background:#fff;border:2px solid var(--accent);color:var(--accent)}
+  .uline::after{content:"";display:block;width:44px;height:4px;border-radius:2px;background:var(--accent);margin-top:10px}
+  .sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:start}
+  @media(max-width:960px){.sgrid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.sgrid{grid-template-columns:1fr}}
+  .scard{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;padding:18px;box-shadow:0 1px 3px rgba(20,33,61,.06)}
+  .scard h3{margin:0 0 12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .scard.c1{border-top-color:#0e7c86}.scard.c1 h3{color:#0e7c86}
+  .scard.c2{border-top-color:#2b6cb0}.scard.c2 h3{color:#2b6cb0}
+  .scard.c3{border-top-color:#c05621}.scard.c3 h3{color:#c05621}
+  .scard.c4{border-top-color:#2f855a}.scard.c4 h3{color:#2f855a}
   footer{padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
 
   /* ===== Dashboard view (BI-style) ===== */
@@ -253,13 +263,14 @@
     </section>
 
     <section id="skills">
-      <h2>Skills &amp; Tech Stack</h2>
-      <p class="sub">Currently learning: DAX, Power BI data modeling, and Claude in Power BI &amp; Tableau.</p>
-      <div class="skills">
-        <div class="card"><h3>data_&amp;_bi</h3><div class="tags"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">NumPy</span></div></div>
-        <div class="card"><h3>visualization</h3><div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">DAX</span></div></div>
-        <div class="card"><h3>systems_&amp;_cloud</h3><div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Azure</span><span class="tag">Intune</span><span class="tag">Google Workspace</span><span class="tag">Hyper-V</span><span class="tag">Networking</span></div></div>
-        <div class="card"><h3>platforms</h3><div class="tags"><span class="tag">Infor HMS</span><span class="tag">Zendesk</span><span class="tag">POS / FreedomPay</span><span class="tag">Salto</span><span class="tag">Ruckus</span></div></div>
+      <div class="eyebrow">02 /</div>
+      <h2 class="uline">Skills &amp; Tech Stack</h2>
+      <p class="sub">Currently learning: DAX, Power BI data modeling, and Claude in Power BI &amp; Tableau · PL-300 exam planned for December 2026.</p>
+      <div class="sgrid">
+        <div class="scard c1"><h3>Data &amp; BI</h3><div class="tags"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Excel</span><span class="tag">PivotTables</span><span class="tag">Power Query</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Tableau</span><span class="tag">Data Modeling</span><span class="tag">ETL</span><span class="tag">Data Cleaning</span><span class="tag">Data Validation</span><span class="tag">Dashboard Design</span></div></div>
+        <div class="scard c2"><h3>AI &amp; Automation</h3><div class="tags"><span class="tag">Claude</span><span class="tag">Claude Code</span><span class="tag">Google Gemini</span><span class="tag">Microsoft 365 Copilot</span><span class="tag">AI-Assisted Analysis</span><span class="tag">Prompting</span><span class="tag">Streamlit</span><span class="tag">Workflow Automation</span></div></div>
+        <div class="scard c3"><h3>Systems &amp; Cloud</h3><div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Azure</span><span class="tag">Intune</span><span class="tag">Google Workspace Admin</span><span class="tag">Hyper-V</span><span class="tag">Networking</span><span class="tag">VPN</span><span class="tag">Endpoint Management</span><span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">Backup &amp; Recovery</span></div></div>
+        <div class="scard c4"><h3>Platforms &amp; Practices</h3><div class="tags"><span class="tag">Infor HMS</span><span class="tag">Opera PMS</span><span class="tag">Zendesk</span><span class="tag">FreedomPay POS</span><span class="tag">Salto</span><span class="tag">Ruckus</span><span class="tag">BirchStreet</span><span class="tag">IT Service Mgmt</span><span class="tag">Data Migration</span><span class="tag">Auditing &amp; Reconciliation</span><span class="tag">SOPs</span><span class="tag">Bilingual Training</span></div></div>
       </div>
     </section>
 
