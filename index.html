@@ -329,11 +329,10 @@
       <p class="sub">Real datasets, end to end.</p>
       <div class="grid">
         <div class="card">
-          <h3>📷 ALPR Camera Data — NY State</h3>
-          <span class="pill run" style="display:inline-block;margin-bottom:8px">In progress</span>
-          <p>Cleaned and standardized a New York ALPR camera dataset with Power Query: coordinate validation, operator standardization, direction normalization, and deduplication. Tableau dashboard in progress.</p>
-          <div class="tags"><span class="tag">Power Query</span><span class="tag">Python</span><span class="tag">Tableau</span></div>
-          <div class="links"><a href="https://github.com/hperez1718-byte/ALPR-Camera-Data-Cleaning-New-York-State" target="_blank" rel="noopener">GitHub →</a></div>
+          <h3>📷 ALPR Cameras — NY State</h3>
+          <p>Cleaned 8,689 crowdsourced records down to 4,483 verified NY cameras (Python + Power Query), matched each camera to its county, and added Census population. Tableau story finding: NYC has the most cameras but the fewest per resident.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Power Query</span><span class="tag">Tableau</span><span class="tag">Census data</span></div>
+          <div class="links"><a href="https://public.tableau.com/app/profile/hyndrani.perez/viz/ALPRCamerasinNewYorkStatev2/ALPRCamerasinNewYorkStateWhatVolunteerMappingShows" target="_blank" rel="noopener">Tableau →</a> <a href="https://github.com/hperez1718-byte/ALPR-Camera-Data-Cleaning-New-York-State" target="_blank" rel="noopener">GitHub →</a></div>
         </div>
         <div class="card">
           <h3>🤖 AI Career Coach</h3>
@@ -437,8 +436,8 @@
   const projects = [
     {name:"Hotel Cancellations Dashboard", stack:"Excel · PivotTables", cats:["Viz"], status:"ok",
      desc:"119,386 bookings analyzed: 37% cancellation rate, $16.7M lost room revenue; cancellations climb from 19% to 57% with lead time.", url:"https://github.com/hperez1718-byte/Hotel-Cancellations-Dashboard"},
-    {name:"ALPR Camera Data — NY State", stack:"Power Query · Tableau", cats:["Python","Viz"], status:"run",
-     desc:"Cleaned and standardized NY ALPR camera data: coordinate validation, deduplication, normalization. Tableau dashboard in progress.", url:"https://github.com/hperez1718-byte/ALPR-Camera-Data-Cleaning-New-York-State"},
+    {name:"ALPR Cameras — NY State", stack:"Python · Power Query · Tableau", cats:["Python","Viz"], status:"ok",
+     desc:"4,483 verified NY camera locations, matched to counties and joined with Census population. Tableau story: NYC has the most cameras but the fewest per resident.", url:"https://github.com/hperez1718-byte/ALPR-Camera-Data-Cleaning-New-York-State"},
     {name:"AI Career Coach", stack:"Streamlit · Gemini", cats:["Python","AI"], status:"ok",
      desc:"Open-source job search assistant: ATS match analysis, tailored résumés and cover letters, STAR mock interviews.", url:"https://github.com/hperez1718-byte/AI-Career-Coach"}
   ];
